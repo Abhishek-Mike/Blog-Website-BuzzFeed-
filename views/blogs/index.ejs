@@ -1,0 +1,38 @@
+
+<%- include("../partials/header")%>
+<%- include("../partials/navbar")%>
+  <br>
+  <br>
+  
+  <div class="card-body" style="width: 100%;">
+  <%- include("../partials/flash")%>
+
+  <section id="heading"> 
+    
+   <h4 class="display-4" style="font-family: 'Girassol', cursive, serif;color:#8c2f39;">
+     <i class="fas fa-blog" style="margin-right: 40px; color: #5e548e;font-style: italic;"></i>BuzzFeed-Media</h4>
+
+ </section>
+
+    <div class="row products">
+
+        <%for(let blog of blogs){%>
+          <div class="col-lg-6 col-md-4 col-sm-9">
+            <div class="card" >
+                <img src="<%= blog.img %>" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <strong><h5 class="card-title" style="font-style: italic;"><%= blog.name %></h5></strong>
+                  <br>
+                  <a href="/blogs/<%= blog._id %>" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+          </div>
+        <%}%>
+     
+    </div>
+
+</div>
+
+<br><br><br><br><br>
+<%- include("../partials/footer")%>
+

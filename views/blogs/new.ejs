@@ -1,0 +1,46 @@
+<%- include("../partials/header")%>
+<%- include("../partials/navbar")%>
+
+
+<div class="ui main text container segment" style="margin-top:4.5rem;width:90vw">
+  <div class="ui huge header" style="font-family: 'Gentium Book Basic', serif;text-align: center;">Write your story</div>
+  
+            <form class="validated-form" action="/blogs" method="POST" style="max-width:100%;margin-left:50px auto" novalidate>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Title</label>
+                  <input type="text" class="form-control" id="name" placeholder="Title" name="blog[name]" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="img" class="form-label">Image URL</label>
+                  <input type="text" class="form-control" id="img" placeholder="Image URL" name="blog[img]" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="mb-3">
+                    <label for="author" class="form-label">Author</label>
+                    <input type="text" class="form-control" id="author" placeholder="Author Name" name="blog[author]" required>
+                    <div class="valid-feedback">
+                      Looks good!
+                    </div>
+                  </div>
+        
+                <div class="mb-3">
+                    <label for="desc" class="form-label">Description</label>
+                    <textarea class="form-control" id="desc" cols="30" rows="5" name="blog[desc]" required></textarea>
+                    <div class="valid-feedback">
+                      Looks good!
+                    </div>
+                  </div>
+               
+                <button type="submit" class="btn btn-success">Submit</button>
+              </form>
+        
+            </div>
+</div>
+
+
+<%- include("../partials/footer")%>

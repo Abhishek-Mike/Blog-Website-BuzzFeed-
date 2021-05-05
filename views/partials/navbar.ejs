@@ -1,0 +1,21 @@
+<div class="ui fixed inverted menu">
+  <div class="ui container">
+      <div class="header item"><i class="heart icon"></i>Black Lives Matter</div>
+      <a href="/blogs" class="item">Home</a>
+      <a href="/blogs/new" class="item">New Post</a>
+  </div>
+ 
+  <%if(!currentUser){%>
+    <a href="/login" class="item">Login</a>
+  
+    <%}else{%>
+  <a href="#" class="item" style="color: chartreuse;">Hi <%=currentUser.username%></a>
+  <a href="/logout" class="item">Logout</a>
+<%}%>
+</div>
+
+
+
+  
+
+ 
