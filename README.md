@@ -1,0 +1,46 @@
+# Blog-Website-BuzzFeed-
+simple-website-with-blog is a simple Node.js web application for static content that includes a blog. It was created as the basis for my own website, but everyone is welcome to use it. The implementation strives to be simple and free of unnecessary dependencies.
+Goals
+
+    An easy way to create a simple, secure website with a blog
+    Support for text-based and photo-based blog formats
+    Easy customization of site layout and formatting
+    High resolution (2x) support for photo blog images
+    Support for Windows and Linux hosting with Node.js
+    Simple post format that separates content and metadata
+    Ability to create posts that never show up in the timeline
+
+Structure
+
+    /app.js Entry point for the application, configures the server and static content
+    /blog.js Implementation of the blog, archives, tags
+    /seed.js Environment variables used to control basic behavior
+    /auth.js Authentication
+    
+    Instructions
+
+    Install Node.js version 10+
+    Fork and clone repository
+    Add static content to /seed.js
+    Add post and content under /blogs/new
+    npm install
+    npm start
+    Open http://localhost:3000/ and verify
+    Commit changes to repository
+    Deploy repository to hosting service
+
+
+Dependencies
+Project 	Home Page
+Express 	https://expressjs.com/
+Mongoose  https://mongoosejs.com/
+
+Contributing
+
+    Open issue, discuss proposal
+    Fork and clone repository
+    Change code and update tests
+    npm test
+    npm run lint
+    Review changes
+    Send pull request
