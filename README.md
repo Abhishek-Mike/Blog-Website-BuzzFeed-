@@ -1,6 +1,11 @@
 # Blog-Website-BuzzFeed-
 simple-website-with-blog is a simple Node.js web application for static content that includes a blog. It was created as the basis for my own website, but everyone is welcome to use it. The implementation strives to be simple and free of unnecessary dependencies.
+
 Goals
+    Upvote feature like Quora
+    Trending topics arrangement
+    Side panel scroll-down content
+Features
 
     An easy way to create a simple, secure website with a blog
     Support for text-based and photo-based blog formats
