@@ -1,3 +1,7 @@
+if(process.env.NODE_ENV !== 'production'){
+    require('dotenv').config();
+}
+
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
@@ -14,8 +18,9 @@ const User = require('./models/user');
 // Routes
 const blogRoutes = require('./routes/blog');
 const authRoutes = require('./routes/auth');
+const { Console } = require('console');
 
-mongoose.connect('mongodb://localhost:27017/shopApp',
+mongoose.connect(process.env.DB_URL,
     {
         useNewUrlParser: true,
         useUnifiedTopology: true,
@@ -69,13 +74,13 @@ app.use((req, res, next) => {
 
 app.get('/', (req, res) => {
     
-    res.send("LANDING PAGE");
+    res.render("home");
 })
 
 app.use(blogRoutes);
 app.use(authRoutes);
 
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log("Server Started AT PORT 3000");
 })
