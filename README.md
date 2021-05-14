@@ -1,6 +1,9 @@
 # Blog-Website-BuzzFeed-
 simple-website-with-blog is a simple Node.js web application for static content that includes a blog. It was created as the basis for my own website, but everyone is welcome to use it. The implementation strives to be simple and free of unnecessary dependencies.
 
+
+--------------URL------> https://buzzfeed-blogging-website.herokuapp.com/ ---------URL------>
+
 Goals
     Upvote feature like Quora
     Trending topics arrangement
