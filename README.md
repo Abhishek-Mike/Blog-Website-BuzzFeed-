@@ -5,8 +5,8 @@ simple-website-with-blog is a simple Node.js web application for static content 
 --------------URL------> https://buzzfeed-blogging-website.herokuapp.com/ ---------URL------>
 
 Goals
-    1) Upvote feature like Quora
-    2) Trending topics arrangement
+    1) Upvote feature to be created just like Quora
+    2) Trending topics arrangement (currently in old update order)
     3) Side panel scroll-down content
     4) Landing page issue resolved
 
