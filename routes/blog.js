@@ -112,8 +112,7 @@ router.post('/blogs/:id/review',isLoggedIn,async (req, res) => {
 
 
         const review = new Review({
-            user: req.user.username,
-            ...req.body
+            user: req.user.username,...req.body
         });
 
         blog.reviews.push(review);
