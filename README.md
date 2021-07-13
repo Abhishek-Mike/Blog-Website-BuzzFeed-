@@ -16,9 +16,9 @@ Features
     Support for text-based and photo-based blog formats
     Easy customization of site layout and formatting
     High resolution (2x) support for photo blog images
-    Support for Windows and Linux hosting with Node.js
+    Support for Windows hosting with Node.js
     Simple post format that separates content and metadata
-    Ability to create posts that never show up in the timeline
+    Ability to create posts & remove if you want that never show up in the timeline
     Abilty to comment on any blog posts 
 
 Structure
